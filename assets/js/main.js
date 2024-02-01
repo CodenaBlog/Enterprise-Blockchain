@@ -1,13 +1,3 @@
-// showcaseTl = gsap[_0x511187(0x127)]({
-//     'scrollTrigger': {
-//         'trigger': _0x511187(0x189),
-//         'start': _0x511187(0x15f),
-//         'end': _0x511187(0x17b),
-//         'scrub': 0x0
-//     },
-//     'ease': _0x511187(0x171)
-// }),
-
 
 
 // topBtn
@@ -39,7 +29,6 @@ ScrollTrigger.create({
     trigger:'body',
     start:"1000px 0%",
     end:"100% 100%",
-    markers:false,
     onEnter:function(){
         $('.header').addClass('fixed')
     },
@@ -69,7 +58,6 @@ ScrollTrigger.create({
     end: "+=7000",
     scrub: true,
     pin: true,
-    markers: false,
     toggleClass:{
         targets:"#topBtn", className:"hide"
     }
@@ -84,7 +72,6 @@ const showcaseTL = gsap.timeline({
       end: '500% top',
       pin: true,
       scrub: true,
-      markers: true,
     }
   });
 
@@ -144,7 +131,6 @@ ScrollTrigger.create({
     trigger:".sc-worker",
     start: "top 10%",
     end:"100% 10%",
-    markers: false,
     anticipatePin: 1,
     onEnter:function(){
         $('body').removeClass('dark')
@@ -168,7 +154,6 @@ ScrollTrigger.create({
     trigger:".sc-anyone",
     start: "-10% center",
     end: "60% center",
-    markers:false,
     scrub:1,
 })
 
@@ -178,7 +163,6 @@ ScrollTrigger.create({
     start: "top top",
     end: "100% 100%",
     pin:".title-area",
-    markers:false,
     scrub:true,
 })
 
@@ -187,7 +171,6 @@ ScrollTrigger.create({
     trigger:".sc-possibility",
     start: "-15% 55%",
     end:"45% 55%",
-    markers: false,
     onEnter:function(){
         $('body').addClass('dark')
     },
@@ -207,7 +190,6 @@ ScrollTrigger.create({
     start: "top top",
     end:"+=5000",
     pin:true,
-    markers:false,
     scrub:true,
 })
 
@@ -225,7 +207,6 @@ ScrollTrigger.create({
     trigger:".sc-banner01",
     start:"-10% 85%",
     end: "320% 85%",
-    // markers:false,
     scrub:1,
 })
 
@@ -266,7 +247,6 @@ ScrollTrigger.create({
     trigger:".sc-safety",
     start:"top top",
     end: "+=9000",
-    markers:false,
     scrub:true,
     pin:true,
     onEnter:function(){
@@ -278,7 +258,6 @@ ScrollTrigger.create({
     trigger:".sc-safety .group-scroll ",
     start: `180% top`,
     end:"200% bottom",
-    markers: false,
     onEnter:function(){
         $('.sc-safety .bg').addClass('blur')
         $('.sc-safety .group-scroll .middle-area').fadeIn();
@@ -290,7 +269,6 @@ ScrollTrigger.create({
     trigger:".sc-change",
     start: "-15% 55%",
     end:"45% 55%",
-    markers: false,
     onEnter:function(){
         $('body').removeClass('dark')
     },
@@ -313,7 +291,6 @@ ScrollTrigger.create({
     trigger:".sc-takeoff",
     start: "-10% center",
     end: "60% center",
-    // markers:true,
     scrub:true,
 })
 
@@ -332,7 +309,6 @@ ScrollTrigger.create({
     start:"top top",
     end:"+=3000",
     pin:true,
-    markers:false,
     scrub:true,
     onEnter:function(){
         $('.sc-economy .bg').addClass('blur')
@@ -350,7 +326,6 @@ gsap.to(".sc-economy .bg", {
         trigger: ".sc-economy .card-list",
         start: "160% top",
         end: "190% top",
-        markers: true,
         scrub: true,
     }
 });
@@ -403,7 +378,6 @@ gsap.to(".sc-data .bg", {
         trigger: ".sc-data .card-list",
         start: "120% top",
         end: "140% top",
-        markers: true,
         scrub: true,
     }
 });
@@ -414,7 +388,6 @@ ScrollTrigger.create({
     start: "0% 100%",
     end: "110% 100%",
     scrub: true,
-    markers: false,
     toggleClass:{
         targets:"#topBtn", className:"on2"
     },
